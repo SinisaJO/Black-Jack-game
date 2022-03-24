@@ -8,7 +8,7 @@
 
 > The goal of blackjack is to beat the dealer's hand without going over 21.
 
-### 🏠 [Homepage](index.html)
+### 🏠 [Homepage](https://superb-gumdrop-bba1c7.netlify.app/)
 
 ## Install
 
