@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+html {
+    overflow: hidden;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+body {
+    background: url(/blackjack_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 6rem;
+    color: rgb(73, 70, 255);
+    text-shadow:9px 8px 0px rgba(0,0,0,0.15);
+    font-family: 'Fredoka', sans-serif;
+}
+
+.my-canvas {
+    position: absolute;
+    z-index: -1;
+}
+
+.title {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+span {
+    position: absolute;
+    bottom: -30px;
+    right: -60px;
+    transform: rotate(-12deg);
+    color: rgb(0, 0, 0);
+}
+
+
+.summary {
+    font-size: 3rem;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: none;
+}
+
+.scoreboard {
+    margin: 3rem auto;
+    margin-bottom: 0;
+    width: 200px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.total-score {
+    background: #fff;
+    border-radius: 4px;
+    padding: 0rem .5rem;
+    margin: .5rem 0;
+}
+
+.total-money {
+    background: #fff;
+    border-radius: 4px;
+    padding: 0rem .5rem;
+}
+
+.container {
+    display: flex;
+}
+
+.card-box {
+    display: flex;
+    gap: 2rem;
+    margin: 5rem auto;
+    margin-bottom: 6rem;
+}
+
+.btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.button {
+    display: flex;
+    flex-basis: 45%;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+    width: 200px;
+    height: 40px;
+    background: rgb(73, 70, 255);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(255, 253, 253);
+    font-family: 'Amatic SC', cursive;
+}
+.button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.card {
+    height: 220px;
+    width: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url(/card.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center;
+}
+p {
+    margin: 0;
+    line-height: 1;
+    font-size: 1.5rem;
+    align-self: center;
+}
+h3 {
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1;
+    font-family: 'Amatic SC', cursive;
+    align-self: center;
+}
+.card-value {
+    display: flex;
+}
+.card-value:nth-child(1) {
+    align-self: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem .3rem;
+}
+.card-value:nth-child(2) {
+    font-size: 4rem;
+}
+.card-value:nth-child(3) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    margin: 0rem .3rem;
+}

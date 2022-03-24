@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <canvas id="my-canvas" class="my-canvas"></canvas>
+    <div class="title"><h1>BLACKJACK<span>game</span></h1></div>
+    <div class="scoreboard">
+        <h2 id="total-score" class="total-score">Total Score: 0pts</h2>
+        <h1 id="summary" class="summary"></h1>
+    </div>
+    <div class="container">
+        <div id="card-box" class="card-box">
+            <div id="card1" class="card">
+                <div class="card-value">
+                    <h3 class="card-number1"></h3>
+                    <p class="card-symbol1"></p>
+                </div>
+                <div class="card-value card-symbol1"></div>
+                <div class="card-value">
+                    <h3 class="card-number1"></h3>
+                    <p class="card-symbol1"></p>
+                </div>
+            </div>
+            <div id="card2" class="card">
+                <div class="card-value">
+                    <h3 class="card-number2"></h3>
+                    <p class="card-symbol2"></p>
+                </div>
+                <div class="card-value card-symbol2"></div>
+                <div class="card-value">
+                    <h3 class="card-number2"></h3>
+                    <p class="card-symbol2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-box">
+        <button id="btn" class="button">START GAME</button>
+        <button id="btn-new" class="button">NEW CARD</button>
+        <button id="btn-game" class="button">NEW GAME</button>
+    </div>
+    <script type="module" src="/index.min.js"></script>
+    <script type="module" src="blackjack.js"></script>
+</body>
+</html>
